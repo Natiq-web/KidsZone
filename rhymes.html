@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kids Zone - Rhymes</title>
+    <link rel="icon" type="image/x-icon" href="/images/school_icon_195275.webp">
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- lightgallery css cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css">
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            margin: 0;
+            height: 100vh;
+        }
+
+        /* Flex container for poem boxes */
+        .poem-container {
+            display: flex;
+            flex-wrap: wrap; /* Allow wrapping on smaller screens */
+            justify-content: center; /* Center the boxes */
+            gap: 20px; /* Space between boxes */
+            margin-top: 20px;
+            margin-bottom: 50px;
+        }
+
+        /* Styling for each poem box */
+        .poem-box {
+            background-color: #e9768f;
+            border: 2px solid #f9ba60;
+            border-radius: 10px;
+            padding: 15px;
+            width: 300px; /* Box size reset to original */
+            height: auto;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        /* Hover effect */
+        .poem-box:hover {
+            background-color: #f9ba60;
+            transform: scale(1.05); /* Slightly enlarge on hover */
+        }
+
+        /* Font size adjustments */
+        .poem-box h2 {
+            font-size: 18px; /* Reset font size */
+            margin-bottom: 10px;
+        }
+
+        .poem-box p {
+            font-size: 14px; /* Reset font size */
+        }
+        .topic{
+            font-size: 4rem;
+            color: var(--black);
+            text-align: center;
+            text-transform: uppercase;
+            font-weight: bolder;
+            margin-bottom: 1px;
+            margin: 80px;
+            margin-top: 120px;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .poem-box {
+                width: 300px; /* Reduce size on smaller screens */
+            }
+
+            .poem-box h2 {
+                font-size: 20px; /* Adjust font size on smaller screens */
+            }
+
+            .poem-box p {
+                font-size: 14px; /* Adjust font size on smaller screens */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .poem-box {
+                width: 220px; /* Further reduce size on very small screens */
+            }
+
+            .poem-box h2 {
+                font-size: 14px; /* Adjust title font size */
+            }
+
+            .poem-box p {
+                font-size: 10px; /* Adjust poem font size */
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- header section starts -->
+    <header class="header">
+        <a href="index.html" class="logo"> <i class="fas fa-school"></i> Kids Zone</a>
+        <nav class="navbar">
+            <a href="index.html">home</a>
+            <a href="about.html">about</a>
+            <a href="courses.html">Courses</a>
+            <a href="gallery.html">gallery</a>
+            <a href="contact.html">contact</a>
+        </nav>
+        <div class="icons">
+            <div class="fas fa-user" id="login-btn"></div>
+            <div class="fas fa-bars" id="menu-btn"></div>
+        </div>
+        <form action="" class="login-form">
+            <h3>login now</h3>
+            <input type="email" placeholder="your email" class="box">
+            <input type="password" placeholder="your password" class="box">
+            <p>forget your password <a href="#">click here</a> </p>
+            <input type="submit" value="login now" class="btn">
+        </form>
+    </header>
+    <!-- header section ends -->
+
+    <!-- Poem Boxes container -->
+    <h2 class="topic">Rhymes</h2>
+    <div class="poem-container">
+        <div class="poem-box" id="poem1" onclick="playVoiceOver('Twinkle, twinkle, little star. How I wonder what you are! Up above the world so high, like a diamond in the sky.')">
+            <h2>Twinkling Stars</h2>
+            <p>Twinkle, twinkle, little star,<br>
+            How I wonder what you are!<br>
+            Up above the world so high,<br>
+            Like a diamond in the sky.</p>
+        </div>
+        <div class="poem-box" id="poem2" onclick="playVoiceOver('Fuzzy wuzzy caterpillar, crawling up the tree. He’ll spin himself a blanket, and soon a butterfly he’ll be!')">
+            <h2>Fuzzy Caterpillar</h2>
+            <p>Fuzzy wuzzy caterpillar,<br>
+            Crawling up the tree,<br>
+            He’ll spin himself a blanket,<br>
+            And soon a butterfly he’ll be!</p>
+        </div>
+        <div class="poem-box" id="poem3" onclick="playVoiceOver('Buzzing bee, oh buzzing bee, flying here and there. Pollinating flowers sweet, and spreading love with care.')">
+            <h2>The Friendly Bee</h2>
+            <p>Buzzing bee, oh buzzing bee,<br>
+            Flying here and there,<br>
+            Pollinating flowers sweet,<br>
+            And spreading love with care.</p>
+        </div>
+        <div class="poem-box" id="poem4" onclick="playVoiceOver('Jump, jump, the little frog. Hopping through the morning fog. Over the lily pads, he goes. Where he stops, nobody knows.')">
+            <h2>Jumping Frog</h2>
+            <p>Jump, jump, the little frog,<br>
+            Hopping through the morning fog.<br>
+            Over the lily pads, he goes,<br>
+            Where he stops, nobody knows.</p>
+        </div>
+        <div class="poem-box" id="poem5" onclick="playVoiceOver('Fluffy clouds, white and gray. Floating softly, far away. Shapes and patterns, what a sight. Dancing gently in the light.')">
+            <h2>Clouds in the Sky</h2>
+            <p>Fluffy clouds, white and gray,<br>
+            Floating softly, far away.<br>
+            Shapes and patterns, what a sight,<br>
+            Dancing gently in the light.</p>
+        </div>
+        <div class="poem-box" id="poem6" onclick="playVoiceOver('Swim, swim, the little fish. In the pond, it makes a wish. Splashing water, having fun. Shining bright under the sun.')">
+            <h2>The Little Fish</h2>
+            <p>Swim, swim, the little fish,<br>
+            In the pond, it makes a wish.<br>
+            Splashing water, having fun,<br>
+            Shining bright under the sun.</p>
+        </div>
+    </div>
+
+    <!-- activities section ends -->
+    
+    
+
+    <!-- footer section starts -->
+
+    <section class="footer">
+
+        <div class="box-container">
+
+            <div class="box">
+                <h3> <i class="fas fa-school"></i> KidsZone</h3>
+                <p>The Kid Zone! is a place where you can participate as your child builds literacy skills in a fun and interactive way.</p>
+            </div>
+
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="index.html"> <i class="fas fa-caret-right"></i> Home</a>
+                <a href="about.html"> <i class="fas fa-caret-right"></i> About</a>
+                <a href="courses.html"> <i class="fas fa-caret-right"></i> Courses</a>
+                <a href="gallery.html"> <i class="fas fa-caret-right"></i> Gallery</a>
+                <a href="contact.html"> <i class="fas fa-caret-right"></i> Contact</a>
+            </div>
+
+            <div class="box">
+                <h3>social</h3>
+                <a href="https://www.facebook.com/" target="_blank"> <i class="fab fa-facebook"></i> Facebook</a>
+                <a href="https://twitter.com/" target="_blank"> <i class="fab fa-twitter"></i> Twitter</a>
+                <a href="https://www.google.com/" target="_blank"> <i class="fab fa-google"></i> Google</a>
+                <a href="https://www.instagram.com/" target="_blank"> <i class="fab fa-instagram"></i> Instagram</a>
+                <a href="https://www.linkedin.com/" target="_blank"> <i class="fab fa-linkedin"></i> Linkedin</a>
+            </div>
+
+            <div class="box">
+                <h3>contact</h3>
+                <a href="#"> <i class="fas fa-home"></i> Pakistan,karachi</a>
+                <a href="#"> <i class="fas fa-envelope"></i> siddiquinatiq01@gmail.com</a>
+                <a href="#"> <i class="fas fa-phone"></i> +92 332 4698155</a>
+                <a href="#"> <i class="fas fa-phone"></i> +92 332 4698155</a>
+            </div>
+
+        </div>
+
+        <div class="credit"> &copy; copyright @ 2024 by <span>E-Project</span></div>
+
+    </section>
+
+    <!-- footer section ends -->
+
+    <!-- lightgallery cdn js link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js"></script>
+    <!-- custom js file link -->
+    <script src="script.js"></script>
+    <script>
+        function playVoiceOver(text) {
+            const utterance = new SpeechSynthesisUtterance(text);
+            utterance.lang = 'en-US';
+            speechSynthesis.speak(utterance);
+        }
+    </script>
+</body>
+</html>

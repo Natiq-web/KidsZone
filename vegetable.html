@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kids Zone - Vegetables</title>
+    <link rel="icon" type="image/x-icon" href="/images/school_icon_195275.webp">
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- lightgallery css cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css">
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff;
+        }
+        .vegetable-section {
+            display: flex;
+            margin-bottom: 70px;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            padding: 20px;
+        }
+        .vegetable-box {
+            width: 150px;
+            height: 180px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #e9768f;
+            border: 3px solid #f9ba60;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s, box-shadow 0.3s;
+            cursor: pointer;
+            overflow: hidden;
+        }
+        .vegetable-box:hover {
+            transform: scale(1.1);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        }
+        .vegetable-box img {
+            width: 100px;
+            height: 100px;
+            object-fit: contain;
+            margin-bottom: 10px;
+        }
+        .vegetable-box p {
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+            margin: 0;
+        }
+        h2{
+    font-size: 4rem;
+    color: var(--black);
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bolder;
+    margin: 80px;
+    margin-top: 120px;
+}
+        @media (max-width: 768px) {
+            .vegetable-box {
+                width: 120px;
+                height: 160px;
+            }
+            .vegetable-box img {
+                width: 80px;
+                height: 80px;
+            }
+            .vegetable-box p {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+        <!-- header section starts -->
+
+        <header class="header">
+
+            <a href="index.html" class="logo"> <i class="fas fa-school"></i> Kids Zone</a>
+    
+            <nav class="navbar">
+                <a href="index.html">home</a>
+                <a href="about.html">about</a>
+                <a href="courses.html">Courses</a>
+                <a href="gallery.html">gallery</a>
+                <a href="contact.html">contact</a>
+            </nav>
+    
+            <div class="icons">
+                <div class="fas fa-user" id="login-btn"></div>
+                <div class="fas fa-bars" id="menu-btn"></div>
+            </div>
+    
+            <form action="" class="login-form">
+                <h3>login now</h3>
+                <input type="email" placeholder="your email" class="box">
+                <input type="password" placeholder="your password" class="box">
+                <p>forget your password <a href="#">click here</a> </p>
+                <input type="submit" value="login now" class="btn">
+            </form>
+    
+        </header>
+    
+        <!-- header section ends -->
+
+        <!-- animal section starts -->
+        <h2>Vegetables</h2>
+        <section class="vegetable-section">
+            <div class="vegetable-box" onclick="playSound('Carrot')">
+                <img src="images/vegetable 1.png" alt="Carrot">
+                <p>Carrot</p>
+            </div>
+
+            <div class="vegetable-box" onclick="playSound('Tomato')">
+                <img src="images/vegetable 2.png" alt="Tomato">
+                <p>Tomato</p>
+            </div>
+
+            <div class="vegetable-box" onclick="playSound('Cucumber')">
+                <img src="images/vegetable 3.png" alt="Cucumber">
+                <p>Cucumber</p>
+            </div>
+
+            <div class="vegetable-box" onclick="playSound('Onion')">
+                <img src="images/vegetable 4.png" alt="Onion">
+                <p>Onion</p>
+            </div>
+
+            <div class="vegetable-box" onclick="playSound('Pumpkin')">
+                <img src="images/vegetable 5.png" alt="Pumpkin">
+                <p>Pumpkin</p>
+            </div>
+
+            <div class="vegetable-box" onclick="playSound('Corn')">
+                <img src="images/vegetable 6.png" alt="Corn">
+                <p>Corn</p>
+            </div>
+
+            <div class="vegetable-box" onclick="playSound('Chili')">
+                <img src="images/vegetable 7.png" alt="Chili">
+                <p>Chili</p>
+            </div>
+
+            <div class="vegetable-box" onclick="playSound('Cabbage')">
+                <img src="images/vegetable 8.png" alt="Cabbage">
+                <p>Cabbage</p>
+            </div>
+
+            <div class="vegetable-box" onclick="playSound('Potato')">
+                <img src="images/vegetable 9.png" alt="Potato">
+                <p>Potato</p>
+            </div>
+
+            <div class="vegetable-box" onclick="playSound('Peas')">
+                <img src="images/vegetable 10.png" alt="Peas">
+                <p>Peas</p>
+            </div>
+
+            <div class="vegetable-box" onclick="playSound('Garlic')">
+                <img src="images/vegetable 11.png" alt="Garlic">
+                <p>Garlic</p>
+            </div>
+
+            <div class="vegetable-box" onclick="playSound('Broccoli')">
+                <img src="images/vegetable 12.png" alt="Broccoli">
+                <p>Broccoli</p>
+            </div>
+        </section>
+
+        <!-- animal section ends -->
+
+    <!-- activities section ends -->
+    
+    
+
+    <!-- footer section starts -->
+
+    <section class="footer">
+
+        <div class="box-container">
+
+            <div class="box">
+                <h3> <i class="fas fa-school"></i> KidsZone</h3>
+                <p>The Kid Zone! is a place where you can participate as your child builds literacy skills in a fun and interactive way.</p>
+            </div>
+
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="index.html"> <i class="fas fa-caret-right"></i> Home</a>
+                <a href="about.html"> <i class="fas fa-caret-right"></i> About</a>
+                <a href="courses.html"> <i class="fas fa-caret-right"></i> Courses</a>
+                <a href="gallery.html"> <i class="fas fa-caret-right"></i> Gallery</a>
+                <a href="contact.html"> <i class="fas fa-caret-right"></i> Contact</a>
+            </div>
+
+            <div class="box">
+                <h3>social</h3>
+                <a href="https://www.facebook.com/" target="_blank"> <i class="fab fa-facebook"></i> Facebook</a>
+                <a href="https://twitter.com/" target="_blank"> <i class="fab fa-twitter"></i> Twitter</a>
+                <a href="https://www.google.com/" target="_blank"> <i class="fab fa-google"></i> Google</a>
+                <a href="https://www.instagram.com/" target="_blank"> <i class="fab fa-instagram"></i> Instagram</a>
+                <a href="https://www.linkedin.com/" target="_blank"> <i class="fab fa-linkedin"></i> Linkedin</a>
+            </div>
+
+            <div class="box">
+                <h3>contact</h3>
+                <a href="#"> <i class="fas fa-home"></i> Pakistan,karachi</a>
+                <a href="#"> <i class="fas fa-envelope"></i> siddiquinatiq01@gmail.com</a>
+                <a href="#"> <i class="fas fa-phone"></i> +92 332 4698155</a>
+                <a href="#"> <i class="fas fa-phone"></i> +92 332 4698155</a>
+            </div>
+
+        </div>
+
+        <div class="credit"> &copy; copyright @ 2024 by <span>E-Project</span></div>
+
+    </section>
+
+    <!-- footer section ends -->
+    <script>
+        function playSound(animal) {
+            const synth = window.speechSynthesis;
+            const utterance = new SpeechSynthesisUtterance(animal);
+            synth.speak(utterance);
+        }
+    </script>
+
+    <!-- footer section ends -->
+
+     <!-- lightgallery cdn js link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js"></script>
+    <!-- custom js file link -->
+    <script src="script.js"></script>
+</body>
+</html>
